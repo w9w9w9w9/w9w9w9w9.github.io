@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                margin: 0px;
+                padding: 0px;   
+            }
+            h1
+            { 
+                font-size: 50px;
+                font-weight: bold;
+                background:#571093;
+                color:white;
+                margin: 0px;
+                padding: 20px;
+                text-align: center;
+            }
+            h2
+            {
+                padding-left: 10px;
+            }
+            p
+            {
+                padding-left:10px;
+            }
+            
+            ul 
+            {
+				background:black;
+                list-style-type: none;
+                border-bottom:0.5px solid; 
+                padding:0;
+                margin:0;
+				font-family:nanum gothic;
+                overflow: hidden;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+            }
+            ul li 
+            {
+				display:inline;
+				text-transform:uppercase;
+                padding:0;
+                margin:0;
+            }
+            ul li a 
+            { 
+                text-decoration: none;
+                color:white;
+                text-align:center;
+            }
+            ul li a:hover 
+            { 
+                background:#571093; 
+            }
+            #streamer
+            {
+                background: #571093;
+            }
+            #ad
+            {
+                position:fixed;
+                top:50%;
+                right:50px;
+                background-image:url("eevee.jpg");
+                background-size: 100px 160px;
+            }
+            #ad img
+            {
+                
+                animation: 4s myani;
+                animation-iteration-count: infinite;
+            }
+            @keyframes myani
+            {
+                0%{opacity: 1.0}
+                50%{opacity: 0}
+                100%{opacity: 1.0}
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a>STREAM.ER</a></h1>
+        <ul>
+			<li><a id = "home" href="C:/Users/w9w9w/Desktop/main.html">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</a></li>
+            <li><a id = "streamer" href="C:/Users/w9w9w/Desktop/Streamer.html">&nbsp;&nbsp;&nbsp;Streamer?&nbsp;&nbsp;&nbsp;</a></li>
+			<li><a id = "list" href="C:/Users/w9w9w/Desktop/list.html">&nbsp;&nbsp;&nbsp;List&nbsp;&nbsp;&nbsp;</a></li>
+			<li><a id = "help" href="C:/Users/w9w9w/Desktop/help.html">&nbsp;&nbsp;&nbsp;Help&nbsp;&nbsp;&nbsp;</a></li>
+        </ul>
+        <div id = "ad">
+            <a href = "https://pokemonkorea.co.kr/pikachu_eevee" target="_blank"><img src = "pika.jpg" alt = "pikapika" border = "0" width = "100" height = "160"></a>
+        </div>
+        <h2>Streaming?</h2>
+        <hr size = "3px" width = "200px" align = "left" color = "black" noshade>
+        <p>인터넷에서 음성 또는 동영상 등을 실시간으로 재생하는 기법.<br>현재는 인터넷 방송의 증가로 인해 실시간 인터넷 방송도 스트리밍이라고 부른다.<br>Youtube, 멜론, 벅스, AfreecaTV, Twitch 등의 사이트(platform)가 해당된다.</p>
+        <div id = "logo">
+            <img src = "멜론.png" alt = "" border = "0" width = "200" height = "200">
+            <img src = "youtube.jpg" alt = "" border = "0" width ="400" height = "200">
+            <img src = "지니.JPG" alt = "" border = "0" width = "400" height = "200">
+            <img src = "twitch.png" alt = "" border = "0" width = "400" height = "200">
+        </div>
+        <h2>Streamer!</h2>
+        <hr size = "3px" width = "200px" align = "left" color = "black" noshade>
+        <p>스트리밍 중 특히 인터넷 방송을 진행하는 사람들을 broad caster이라고 하는데, 각 platform들마다 명칭이 상이하며<br>이중 특히 Twitch라는 platform에서 활동하는 사람들을 Streamer라고 한다.</p>
+    </body>
+</html>

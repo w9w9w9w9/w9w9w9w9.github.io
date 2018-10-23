@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                margin: 0px;
+                padding: 0px; 
+            }
+            h1
+            { 
+                font-size: 50px;
+                font-weight: bold;
+                background:#571093;
+                color:white;
+                margin: 0px;
+                padding: 20px;
+                text-align: center;
+            }
+            h2
+            {
+                padding-left: 10px;
+            }
+            p
+            {
+                padding-left:10px;
+            }
+            
+            ul 
+            {
+				background:black;
+                list-style-type: none;
+                border-bottom:0.5px solid; 
+                padding:0;
+                margin:0;
+				font-family:nanum gothic;
+                overflow: hidden;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+            }
+            ul li 
+            {
+				display:inline;
+				text-transform:uppercase;
+                padding:0;
+                margin:0;
+            }
+            ul li a 
+            { 
+                text-decoration: none;
+                color:white;
+                text-align:center;
+            }
+            ul li a:hover 
+            { 
+                background:#571093; 
+            }
+            #help   
+            {
+                background: #571093;
+            }
+            #ad
+            {
+                position:fixed;
+                top:50%;
+                right:50px;
+                background-image:url("eevee.jpg");
+                background-size: 100px 160px;
+            }
+            #ad img
+            {
+                
+                animation: 4s myani;
+                animation-iteration-count: infinite;
+            }
+            @keyframes myani
+            {
+                0%{opacity: 1.0}
+                50%{opacity: 0}
+                100%{opacity: 1.0}
+            }
+            #send
+            {
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a herf= "C:/Users/w9w9w/Desktop/main.html">STREAM.ER</a></h1>
+        <ul>
+			<li><a id = "home" href="C:/Users/w9w9w/Desktop/main.html">&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</a></li>
+            <li><a id = "streamer" href="C:/Users/w9w9w/Desktop/Streamer.html">&nbsp;&nbsp;&nbsp;Streamer?&nbsp;&nbsp;&nbsp;</a></li>
+			<li><a id = "list" href="C:/Users/w9w9w/Desktop/list.html">&nbsp;&nbsp;&nbsp;List&nbsp;&nbsp;&nbsp;</a></li>
+			<li><a id = "help" href="C:/Users/w9w9w/Desktop/help.html">&nbsp;&nbsp;&nbsp;Help&nbsp;&nbsp;&nbsp;</a></li>
+        </ul>
+        <div id = "ad">
+            <a href = "https://pokemonkorea.co.kr/pikachu_eevee" target = "_blank"><img src = "pika.jpg" alt = "pikapika" border = "0" width = "100" height = "160"></a>
+        </div>
+        <p>Maker:안성진<br>Software department, SKKU<br>Assignment #1 in Software practice 4</p>
+        <p>If you have any question, please send me e-mail or below thing.</p>
+        <div id = "send">
+        <form action="MAILTO:w9w9w9@naver.com" method="post" enctype="text/plain">
+            이름:
+            <input type="text" name="name" value=""><br>
+            이메일 주소:<input type="email" name="mail" value=""><br>
+            내용:<br>
+            <textarea name="comment" rows="5" cols="50" padding-left = "10"></textarea><br>
+            <input type="submit" value="Send" />
+            <input type="reset" value="Reset" />
+        </form>
+        </div>
+    </body>
+</html>
